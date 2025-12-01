@@ -1,0 +1,169 @@
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#e11d48; --text:#e6eef8;
+      --btn-h:52px; --radius:14px; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    }
+    html,body{
+		height:100%;
+		margin:0;
+		background:linear-gradient(180deg,var(--bg),#071026);
+		color:var(--text)
+	}
+    .wrap{
+		min-height:100%;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+		padding:32px;
+		box-sizing:border-box
+	}
+    .card{
+		width:100%;
+		max-width:420px;
+		background:rgba(255,255,255,0.03);
+		backdrop-filter:blur(4px);
+		padding:28px;
+		border-radius:18px;
+		box-shadow:0 8px 30px rgba(2,6,23,0.6);
+		text-align:center
+	}
+    .logo{
+		width:120px;
+		height:120px;
+		border-radius:0;
+		margin:0 auto 18px;
+		background-size:cover;
+		background-position:center;
+		border:0px solid rgba(255,255,255,0.06)
+	}
+    h1{
+		margin:0 0 8px;
+		font-size:20px;
+		letter-spacing:0.2px
+	}
+    p.sub{
+		margin:0 0 18px;
+		font-size:13px;
+		opacity:.8;
+		color: inherit;
+		text-decoration: none
+	}
+	.sub a{
+		color: inherit;
+		text-decoration: none
+	}
+    .links{
+		display:flex;
+		flex-direction:column;
+		gap:13px;
+	}
+    .btn{
+		display:inline-flex;
+		align-items:center;
+		justify-content:center;
+		gap:10px;
+		height:var(--btn-h);
+		border-radius:10px;
+		padding:0 16px;
+		text-decoration:none;
+		font-weight:600;
+		background:linear-gradient(90deg,var(--card),rgba(255,255,255,0.02));
+		color:var(--text);
+		box-shadow:0 4px 12px rgba(2,6,23,0.5)
+	}
+    .btn .emoji{
+		font-size:18px
+	}
+    .small{
+		margin-top:14px;
+		font-size:13px;
+		color:rgba(230,238,248,.7)
+	}
+	.textoCentral h1 {
+		margin-bottom: 15px;
+	}
+	
+	.textoCentral h3 {
+		margin-bottom: 15px;
+		font-size:14px;
+		font-style: italic;
+	}
+
+	.textoCentral p {
+		margin-bottom: 20px;
+		line-height: 1.5;
+	}
+
+	.fotos img {
+		width: 100%;
+		max-width: 350px;
+		margin: 10px;
+		border-radius: 8px;
+	}
+	.icon {
+		 width: 30px;
+		 height: 30px;
+		 margin-right: 8px;
+	}
+	
+	.lista{
+		width:100%;
+		max-width:500px;
+		background:rgba(255,255,255,0.03);
+		padding:5px;
+		border-radius:18px;
+		box-shadow:0 8px 30px rgba(2,6,23,0.6);
+		text-align:center
+	}
+	
+	.lista p{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		line-height:1.4;
+		font-size:13px;
+	}
+	
+	.carrusel {
+	  position: relative;
+	  max-width: 600px;
+	  max-height: 400px;
+	  margin: 20px auto;
+	  overflow: hidden;
+	  border-radius: 10px;
+	}
+
+	.slides img {
+	  width: 100%;
+	  display: none; /* inicialmente ocultas */
+	}
+
+	.slides img.active {
+	  display: block; /* solo la foto activa se muestra */
+	}
+
+	/* Botones */
+	.prev, .next {
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  background-color: rgba(0,0,0,0.5);
+	  color: white;
+	  border: none;
+	  padding: 10px;
+	  cursor: pointer;
+	  border-radius: 50%;
+	}
+
+	.prev { left: 10px; }
+	.next { right: 10px; }
+	
+	.justificado {
+	  text-align: justify;
+	  text-justify: inter-word; /* ajusta el espacio entre palabras */
+	  line-height: 1.5;         /* altura de línea más cómoda */
+	}
+
+
+
+    footer{margin-top:14px;font-size:12px;color:rgba(230,238,248,.55)}
+    @media (max-width:420px){.card{padding:20px}}
