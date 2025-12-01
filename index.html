@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Asociación Musical Almorox</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#e11d48; --text:#e6eef8;
+      --btn-h:52px; --radius:14px; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#071026);color:var(--text)}
+    .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;box-sizing:border-box}
+    .card{width:100%;max-width:420px;background:rgba(255,255,255,0.03);backdrop-filter:blur(4px);padding:28px;border-radius:18px;box-shadow:0 8px 30px rgba(2,6,23,0.6);text-align:center}
+    .logo{width:120px;height:120px;border-radius:50%;margin:0 auto 18px;background-size:cover;background-position:center;border:3px solid rgba(255,255,255,0.06)}
+    h1{margin:0 0 8px;font-size:20px;letter-spacing:0.2px}
+    p.sub{margin:0 0 18px;font-size:13px;opacity:.8}
+    .links{display:flex;flex-direction:column;gap:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:var(--btn-h);border-radius:10px;padding:0 16px;text-decoration:none;font-weight:600;background:linear-gradient(90deg,var(--card),rgba(255,255,255,0.02));color:var(--text);box-shadow:0 4px 12px rgba(2,6,23,0.5)}
+    .btn .emoji{font-size:18px}
+    .small{margin-top:14px;font-size:13px;color:rgba(230,238,248,.7)}
+    footer{margin-top:14px;font-size:12px;color:rgba(230,238,248,.55)}
+    @media (max-width:420px){.card{padding:20px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <!-- sustituye 'assets/logo.jpg' por la ruta a vuestro logo -->
+      <div class="logo" style="background-image:url('assets/logo.png');"></div>
+      <h1>Asociación Musical Almorox</h1>
+      <p class="sub">Historia | Repertorio | Comunidad</p>
+
+      <div class="links">
+        <a class="btn" href="https://www.youtube.com/CHANNEL_ID" target="_blank" rel="noopener">
+          <span class="emoji">▶️</span> YouTube
+        </a>
+        <a class="btn" href="https://www.instagram.com/INSTAGRAM_USER" target="_blank" rel="noopener">
+          <span class="emoji">📸</span> Instagram
+        </a>
+        <a class="btn" href="https://www.facebook.com/FACEBOOK_PAGE" target="_blank" rel="noopener">
+          <span class="emoji">📘</span> Facebook
+        </a>
+        <a class="btn" href="https://www.tiktok.com/@TIKTOK_USER" target="_blank" rel="noopener">
+          <span class="emoji">🎵</span> TikTok
+        </a>
+
+        <a class="btn" href="mailto:contacto@amalmorox.es">
+          <span class="emoji">✉️</span> contacto@amalmorox.es
+        </a>
+        <a class="btn" href="tel:+34123456789">
+          <span class="emoji">📞</span> +34 123 456 789
+        </a>
+        <a class="btn" href="tel:+34987654321">
+          <span class="emoji">📞</span> +34 987 654 321
+        </a>
+      </div>
+
+      <div class="small">"La música es el verdadero lenguaje universal." – Ludwig van Beethoven</div>
+      <footer>© Asociación Musical Almorox</footer>
+    </div>
+  </div>
+</body>
+</html>
