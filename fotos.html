@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotos - Asociación Musical Almorox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="logo" style="background-image:url('assets/logo.png');"></div>
+      <h1>Asociación Musical Almorox</h1>
+      <p class="sub"><a href="index.html">Inicio</a> | <a href="historia.html">Historia</a> | <a href="repertorio.html">Repertorio</a></p>
+
+  <main class="textoCentral">
+		<div class="carrusel">
+		  <div class="slides">
+			<img src="assets/fotos/foto2.jpg" alt="Santa Cecilia 2025">
+			<img src="assets/fotos/foto6.jpg" alt="Pasa-CalleX">
+			<img src="assets/fotos/foto1.jpg" alt="Fiestas de Almorox">
+			<img src="assets/fotos/foto3.jpg" alt="Almorox">
+			<img src="assets/fotos/foto4.jpg" alt="Navas del Rey">
+			<img src="assets/fotos/foto5.jpg" alt="Cebreros">
+			<img src="assets/fotos/foto7.jpg" alt="La Noche del Pasodoble">
+			<img src="assets/fotos/foto8.jpg" alt="Paredes de Escalona">
+			<img src="assets/fotos/foto9.jpg" alt="Peñaranda de Bracamonte">
+		  </div>
+		  <button class="prev">&#10094;</button>
+		  <button class="next">&#10095;</button>
+		</div>
+  </main>
+  </div>
+  <div class="small">"La música es vida y mientras suene nada muere para siempre." – Medina Reeds</div>
+  <footer>© Asociación Musical Almorox</footer>
+  </div>
+  </div>
+    <script>
+	let index = 0;
+	const slides = document.querySelectorAll('.slides img');
+
+	function showSlide(i) {
+	  slides.forEach((slide, idx) => slide.classList.remove('active'));
+	  slides[i].classList.add('active');
+	}
+
+	function nextSlide() {
+	  index = (index + 1) % slides.length;
+	  showSlide(index);
+	}
+
+	function prevSlide() {
+	  index = (index - 1 + slides.length) % slides.length;
+	  showSlide(index);
+	}
+
+	// Inicial
+	showSlide(index);
+
+	// Botones
+	document.querySelector('.next').addEventListener('click', nextSlide);
+	document.querySelector('.prev').addEventListener('click', prevSlide);
+
+	// Cambio automático cada 3 segundos (opcional)
+	setInterval(nextSlide, 3000);
+	</script>
+</body>
+</html>
